@@ -224,13 +224,13 @@ section {
     color: #e63d6c !important;
 }
 
-.site-fig .header-limiter {
+.site-fig .xcx-oimiter {
     max-width: 960px;
     text-align: center;
     margin: 0 auto;
 }
 
-.site-fig .header-limiter img {
+.site-fig .xcx-oimiter img {
     float: none;
     margin: -12px 0 10px;
     text-align: center;
@@ -238,16 +238,16 @@ section {
     line-height: 1;
 }
 
-.site-fig.header-limiter a {
+.site-fig.xcx-oimiter a {
     color: #ffffff;
 }
 
-.site-fig .header-limiter nav {
+.site-fig .xcx-oimiter nav {
     line-height: 1.7;
     float: none !important;
 }
 
-.site-fig .header-limiter nav a {
+.site-fig .xcx-oimiter nav a {
     border-radius: 5px;
     font-weight: 900;
     font-size: 13px;
@@ -259,13 +259,13 @@ section {
     color: #9c4fcc;
 }
 
-.site-fig .header-limiter nav a:hover {
+.site-fig .xcx-oimiter nav a:hover {
     background-color: #252525;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.site-fig .header-limiter nav a.current {
+.site-fig .xcx-oimiter nav a.current {
     background-color: #0000ff;
     color: #222;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 5px rgba(0, 0, 0, 0.5);
