@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="ar" dir="rtl"><head>
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,8 @@
 
 <meta property="og:image" content="https://raw.githubusercontent.com/www0abdb-oss/abderrahim.laib.github.io/main/decoration.png">
 
-	<title>abd errahim laib Dev</title>
-	<meta property="og:title" content="abd errahim laib Dev" />
+	<title>عبد الرحيم العايب المطور</title>
+	<meta property="og:title" content="عبد الرحيم العايب المطور" />
 
 	<meta name="description" content="Learn how to make games!
 ">
@@ -25,10 +25,31 @@
 	<link rel="canonical" href="/">
 
 <style>
-    body, html {
-        font-family:  'Georgia',  'DejaVu Serif',  'Amiri Quran','Times New Roman', serif;
-    }
+/* 1. تعريف الخط أولاً */
+@font-face {
+  font-family: 'MyAmiriQuran';
+  src: url('fonts/AmiriQuran.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. استخدامه في الـ body مع استخدام نفس الاسم المرفوع */
+body, html {
+    font-family: 'MyAmiriQuran', 'Georgia', 'DejaVu Serif', 'Times New Roman', serif;
+}
+
+/* 3. تنسيق مخصص للنصوص القرآنية */
+.quran-text {
+  font-family: 'MyAmiriQuran', serif;
+  font-size: 1.5rem;
+  line-height: 2;
+  text-align: right;
+  /* إضافة لضمان وضوح التشكيل */
+  text-rendering: optimizeLegibility;
+}
 </style>
+
 
 		<link rel="stylesheet" type="text/css" href="css/home.css">
 
@@ -108,10 +129,12 @@ transition: all 0.5s ease-in-out;
 .language-dropdown.active .lang-menu {
     display: block;
 }
+
+
 </style>
 
 <div class="language-dropdown">
-    <button class="lang-btn-classic" id="langBtn">language🌐</button>
+    <button class="lang-btn-classic" id="langBtn">اللغة🌐</button>
     <div class="lang-menu" id="langMenu">
         <a href="#" data-lang="ar">العربية</a>
         <a href="#" data-lang="en">English</a>
@@ -153,7 +176,6 @@ if (langBtn && dropdown && langMenu) {
         });
     });
 }
-
 </script>
 
 <body><div class="tisla">
@@ -169,12 +191,12 @@ if (langBtn && dropdown && langMenu) {
 		</div>
 
 		<nav>
-			<a href="/"  class="current">Home</a>
-			<a href="/contact/" >Contact</a>
-			<a class="devassets" target="_blank" href="http://devassets.com/">about</a>
-			<a class="patreon" target="_blank" href="https://brackeysgames.itch.io/">Games</a>
-			<a class="forum" href="https://forum.brackeys.com/" target="_blank">Forum</a>
-			<a class="discord" href="https://discord.gg/brackeys" target="_blank">Discord</a>
+			<a href="/"  class="current">المنزل</a>
+			<a href="/contact/" >لاتصال</a>
+			<a class="devassets" target="_blank" href="http://devassets.com/">حول</a>
+			<a class="patreon" target="_blank" href="https://brackeysgames.itch.io/">اللعاب</a>
+			<a class="forum" href="https://forum.brackeys.com/" target="_blank">المنتدى</a>
+			<a class="discord" href="https://discord.gg/brackeys" target="_blank">الديسكور</a>
 		</nav>
 	</div>
 
@@ -193,14 +215,14 @@ if (langBtn && dropdown && langMenu) {
 	</div>
 
 	<div class="text">
-		<h1>Become a developer</h1>
-		<h2>using free tutorials</h2>
+		<h1>كن مطور</h1>
+		<h2>استخدام الدروس المجانية</h2>
 
-		<h3>abderrahim allows anyone - no matter their budget - to create top-quality games.</h3>
+		<h3>يسمح abderrahim لأي شخص - بغض النظر عن ميزانيته - بإنشاء ألعاب عالية الجودة.</h3>
 	</div>
 
 	<div class="button">
-    <a target="_blank" href="https://youtube.com/brackeys/" class="big-button">My projects</a>
+    <a target="_blank" href="https://youtube.com/brackeys/" class="big-button">مشاريعي</a>
     </div>
 
 
@@ -213,11 +235,11 @@ if (langBtn && dropdown && langMenu) {
 	</div>
 
 	<div>
-		<h1>Make a game</h1>
+		<h1>انشئ لعبة </h1>
 
-		<p>If you want to make a video game but don't know where to start this video will guide you from start to finish.</p>
+		<p>إذا كنت ترغب في صنع لعبة فيديو ولكن لا تعرف من أين تبدأ، فإن هذا الفيديو سيرشدك من البداية إلى النهاية.</p>
 
-		<h2>Creating a game is really fun - just get started!</h2>
+		<h2>إن إنشاء لعبة أمر ممتع حقاً - فقط ابدأ!</h2>
 	</div>
 
 </section>
@@ -225,21 +247,21 @@ if (langBtn && dropdown && langMenu) {
 
 	<section class="three-sections">
 	<div>
-		<h3>All skill levels</h3>
-		<p>Whether your are just starting out or you are an experienced developer there should be a subject for you.</p>
-		<a href="https://www.youtube.com/@Sop_dev/playlists?view=1&flow=grid" target="_blank">See Playlists</a>
+		<h3>جميع مستويات المهارات</h3>
+		<p>سواء كنت قد بدأت للتو أو كنت مطورًا من ذوي الخبرة ، يجب أن يكون هناك موضوع لك.</p>
+		<a href="https://www.youtube.com/@Sop_dev/playlists?view=1&flow=grid" target="_blank">انظر قوائم التشغيل</a>
 	</div>
 
 	<div>
-		<h3>Free to watch</h3>
-		<p>You can watch all the videos free of charge. We just hope you learn something!</p>
-		<a href="https://youtube.com/Sop_dev/" target="_blank">Start Watching</a>
+		<h3>مجانية لمشاهدة</h3>
+		<p>يمكنك مشاهدة جميع مقاطع الفيديو مجانًا. نأمل فقط أن تتعلم شيئا!</p>
+		<a href="https://youtube.com/Sop_dev/" target="_blank">بدء المشاهدة</a>
 	</div>
 
 	<div>
-		<h3>Part of the crew</h3>
-		<p>Getting in contact with fellow game developers can help you learn much faster.</p>
-		<a target="_blank" href="https://discord.gg/brackeys">Join the Discord</a>
+		<h3>جزء من الطاقم</h3>
+		<p>يمكن أن يساعدك التواصل مع زملائك من مطوري الألعاب على التعلم بشكل أسرع.</p>
+		<a target="_blank" href="https://discord.gg/brackeys">انضم إلى Discord</a>
 	</div>
 
 </section>
@@ -251,14 +273,14 @@ if (langBtn && dropdown && langMenu) {
 	</div>
 
 	<div class="text">
-		<h1>Quality assets</h1>
-		<h2>for everyone</h2>
+		<h1>أصول الجودة</h1>
+		<h2>للجميع</h2>
 
-		<h3>You can download a bunch of premade assets to help you develop your game. You don't have to make everything yourself!</h3>
+		<h3>يمكنك تنزيل مجموعة من الأصول الجاهزة لمساعدتك في تطوير لعبتك. ليس عليك أن تصنع كل شيء بنفسك!</h3>
 	</div>
 
 	<div class="button">
-    <a href="http://devassets.com/browse/" target="_blank" class="big-button devassets">Start Browsing</a>
+    <a href="http://devassets.com/browse/" target="_blank" class="big-button devassets">ابدأ التصفح</a>
     </div>
 
 
